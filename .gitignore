@@ -1,0 +1,21 @@
+# 1. DIRECTORIES CURRENTLY IGNORED (KEEP)
+######################################
+
+# Data directory (Raw and Processed data is managed by DVC, NOT Git)
+data/
+data/processed/MachineLearningRating_v3.csv
+
+# Python Virtual Environment
+venv/
+
+
+# 2. DVC METADATA FILES (MUST *NOT* BE IGNORED)
+##############################################
+
+# DVC files (which point to the data content) MUST NOT be ignored by Git.
+# DVC creates these files, and they are required for reproducibility.
+!*.dvc
+!dvc.yaml
+!.dvc/
+!dvc.lock
+!data/processed/*.dvc
